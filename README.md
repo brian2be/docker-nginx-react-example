@@ -1,2 +1,5 @@
-# docker-nginx-react-example
-Example of docker-compose containing docker -ized nginx and react components.
+# This README contains information regarding running nginx + react configuration.
+
+
+bla bla bla
+

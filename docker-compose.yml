@@ -1,0 +1,18 @@
+version: "3"
+
+services:
+  nginx:
+    container_name: nginx
+    build: ./nginx
+    volumes:
+      - frontenddir:/usr/share/nginx/html
+    ports:
+      - '80:80'
+      - '443:443'
+  frontend:
+    container_name: frontapp
+    build: ./frontend
+    volumes:
+      - frontenddir:/usr/src/app/build
+volumes:
+      frontenddir:
